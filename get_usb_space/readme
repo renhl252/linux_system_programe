@@ -1,0 +1,19 @@
+root@book-desktop:/home/book/get_usb_space# ls
+makefile  usb_space  usb_space.c
+
+root@book-desktop:/home/book/get_usb_space# df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/sda6              19G  5.2G   13G  30% /
+udev                  249M  284K  249M   1% /dev
+none                  249M  244K  249M   1% /dev/shm
+none                  249M  632K  249M   1% /var/run
+none                  249M     0  249M   0% /var/lock
+none                  249M     0  249M   0% /lib/init/rw
+/dev/sda1              92M   20M   67M  24% /boot
+/dev/sdb1              40G  1.2G   37G   4% /work
+/dev/sdc1             2.0G  8.6M  2.0G   1% /mnt
+
+root@book-desktop:/home/book/get_usb_space# ./usb_space /mnt
+pathname = /mnt
+Total Space (KB): 2044160
+Free Space (KB): 2035428
