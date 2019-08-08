@@ -27,6 +27,7 @@ unsigned int GetFreeSpaceKB(const char *pathname)
 
 int main(int argc, char *argv[])
 {
+	
 	printf("pathname = %s\n",argv[1]);
 	printf("Total Space (KB): %d\n",GetToalSpaceKB(argv[1]));
 	printf("Free Space (KB): %d\n",GetFreeSpaceKB(argv[1]));
